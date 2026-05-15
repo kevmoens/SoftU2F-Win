@@ -75,13 +75,13 @@ namespace U2FLib
 
             var facet = KnownFacets.GetKnownFacet(req.ApplicationParameter);
 
-            if (!UserPresence.Present)
-            {
-                UserPresence.AskAsync(UserPresence.PresenceType.Authentication, facet);
-                return CreateError(ProtocolErrorCode.ConditionNoSatisfied);
-            }
+            //if (!UserPresence.Present)
+            //{
+            //    UserPresence.AskAsync(UserPresence.PresenceType.Authentication, facet);
+            //    return CreateError(ProtocolErrorCode.ConditionNoSatisfied);
+            //}
 
-            UserPresence.Take();
+            //UserPresence.Take();
             ApplicationData appData;
             using (var db = new AppDbContext())
             {
