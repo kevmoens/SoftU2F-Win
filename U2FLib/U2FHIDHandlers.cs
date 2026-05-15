@@ -67,6 +67,7 @@ namespace U2FLib
         private IRawConvertible HandleAuthenticationRequest(byte[] rawData, BackgroundTask.IO_CTL_XFER_MESSAGE request)
         {
             var req = new AuthenticationRequest(rawData);
+            System.Diagnostics.Debug.WriteLine($"Req:Control:{req.Control}");
 
             var reg = U2FRegistration.Find(keyHandle: req.KeyHandle, applicationParameter: req.ApplicationParameter);
             if (reg == null) return CreateError(ProtocolErrorCode.WrongData);
