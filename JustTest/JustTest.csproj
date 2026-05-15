@@ -6,8 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="System.Security.Cryptography.ProtectedData" Version="6.0.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.3" />
+    <PackageReference Include="System.Security.Cryptography.ProtectedData" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.27" />
   </ItemGroup>
 
   <ItemGroup>
