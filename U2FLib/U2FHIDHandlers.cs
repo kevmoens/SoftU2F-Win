@@ -27,13 +27,13 @@ namespace U2FLib
                 return CreateError(ProtocolErrorCode.OtherError);
             }
 
-            if (!UserPresence.Present)
-            {
-                UserPresence.AskAsync(UserPresence.PresenceType.Registration, facet);
-                return CreateError(ProtocolErrorCode.ConditionNoSatisfied);
-            }
+            //if (!UserPresence.Present)
+            //{
+            //    UserPresence.AskAsync(UserPresence.PresenceType.Registration, facet);
+            //    return CreateError(ProtocolErrorCode.ConditionNoSatisfied);
+            //}
 
-            UserPresence.Take();
+            //UserPresence.Take();
             U2FRegistration reg;
             try
             {
